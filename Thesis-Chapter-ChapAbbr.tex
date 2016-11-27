@@ -1,0 +1,416 @@
+
+\chapter{Insert Chapter Title Here}
+\label{Section:ChapAbbr}
+
+\BlankFootnote{Insert chapter footnote here.
+The chapter footnote could include citations to related publications by the author (``The material in this chapter was presented in part in ....'').}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\label{Section:ChapAbbr:Introduction}
+
+Insert chapter introduction here.
+\lipsum[1-2]
+
+\mbox{\textit{Related Work:}}
+Our work is related to \cite{Examples:Conference01, Examples:Journal01, Examples:Conference02, Examples:Journal02, Examples:Conference03}.
+\lipsum[3-4]
+
+\mbox{\textit{Our Contribution:}}
+\lipsum[5-6]
+
+Proofs of theorems are deferred to \Section~\sref{Section:ChapAbbr:ProofsOfTheorems}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Some Examples}
+\label{Section:ChapAbbr:SomeExamples}
+
+\lipsum[7]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Examples of Figures and Tables}
+\label{Section:ChapAbbr:SomeExamples:FiguresTables}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE: CHAPABBR: FIGURE EXAMPLE A
+\begin{figure}
+\centering\CaptionFontSize
+\includegraphics[height=15em]
+{Figure-ChapAbbr-FigureExampleA}
+\caption[Insert an abbreviated caption here to show in the List of Figures]
+{Insert the full caption here for this floating figure.}
+\label{Figure:ChapAbbr:FigureExampleA}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This is a reference to \Figure~\fref{Figure:ChapAbbr:FigureExampleA}.
+\lipsum[8]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE: CHAPABBR: FIGURE EXAMPLE B
+\begin{sidewaysfigure*}
+\centering\CaptionFontSize
+\includegraphics[height=30em]
+{Figure-ChapAbbr-FigureExampleB}
+\caption[Insert an abbreviated caption here to show in the List of Figures]
+{Insert the full caption here for this floating figure.
+The caption should provide sufficient context to interpret the figure.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+Curabitur dictum gravida mauris.}
+\label{Figure:ChapAbbr:FigureExampleB}
+\end{sidewaysfigure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Here we say something about \Figures~\fref{Figure:ChapAbbr:FigureExampleA} and~\fref{Figure:ChapAbbr:FigureExampleB}.
+Note how the effect in \Figure~\fref{Figure:ChapAbbr:FigureExampleB} is stronger that in \Figure~\fref{Figure:ChapAbbr:FigureExampleA}.
+\lipsum[9]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE: CHAPABBR: EXAMPLE A
+\begin{table}
+\caption[Insert an abbreviated caption here to show in the List of Tables]
+{Insert the full caption here for this floating table.}
+\label{Table:ChapAbbr:TableExampleA}
+\centering\CaptionFontSize
+\begin{tabular}{c@{\hspace{1em}}l}
+\toprule
+Symbol & Definition
+\\
+\midrule
+$\alpha$ & insert definition of $\alpha$ here, $\alpha\geq 1$
+\\
+$\beta$ & insert definition of $\beta$ here, $\beta\geq 2$
+\\
+$\gamma$ & insert definition of $\gamma$ here, $\gamma\geq 3$
+\\
+$\delta$ & insert definition of $\delta$ here, $\delta\geq 4$
+\\
+\bottomrule
+\end{tabular}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We summarize our notation in \Table~\tref{Table:ChapAbbr:TableExampleA}.
+\lipsum[10]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE: CHAPABBR: EXAMPLE B
+\begin{table}
+\caption[Insert an abbreviated caption here to show in the List of Tables]
+{Insert the full caption here for this floating table.
+The caption should provide sufficient context to interpret the table.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+Curabitur dictum gravida mauris.}
+\label{Table:ChapAbbr:TableExampleB}
+\centering\CaptionFontSize
+\begin{tabular}{c@{\hspace{1em}}l@{\hspace{1em}}c}
+\toprule
+Variable & Initial Value & Value at $t=100$
+\\
+\midrule
+$c$ & $0.012$ & $3.456$
+\\
+$\delta$ & $0.312$ & $1.416$
+\\
+$\gamma$ & $0.042$ & $3.252$
+\\
+$h$ & $0.012$ & $3.353$
+\\
+$c$ & $0.012$ & $4.446$
+\\
+$\delta$ & $0.015$ & $3.556$
+\\
+$\gamma$ & $0.612$ & $6.656$
+\\
+$h$ & $0.072$ & $7.456$
+\\
+$c$ & $0.018$ & $8.756$
+\\
+$\delta$ & $0.912$ & $9.456$
+\\
+$\gamma$ & $0.092$ & $5.956$
+\\
+$h$ & $0.012$ & $2.326$
+\\
+\bottomrule
+\end{tabular}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Table~\tref{Table:ChapAbbr:TableExampleB} summarizes our simulation results.
+\lipsum[11]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Examples of Enumerated and Itemized Lists}
+\label{Section:ChapAbbr:SomeExamples:Lists}
+
+Here are some citations \cite{Examples:Conference03, Examples:Journal03, Examples:Conference04, Examples:Journal04, Examples:Conference05, Examples:Journal05}.
+The following is an enumerated list, or numbered list, with multiple levels:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+\item
+\label{Item:ChapAbbr:ItemExampleA}
+First level item
+\item
+First level item
+\begin{enumerate}
+\item
+Second level item
+\item
+Second level item
+\begin{enumerate}
+\item
+Third level item
+\begin{enumerate}
+\item
+Fourth level item
+\item
+Fourth level item
+\end{enumerate}
+\item
+Third level item
+\end{enumerate}
+\item
+Second level item
+\end{enumerate}
+\item
+\label{Item:ChapAbbr:ItemExampleB}
+First level item
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We draw your attention to items \ref{Item:ChapAbbr:ItemExampleA} and \ref{Item:ChapAbbr:ItemExampleB} in particular because they are very important in our study.
+The following is an itemized list, or unnumbered list, with multiple levels:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+First level item
+\item
+First level item
+\begin{itemize}
+\item
+Second level item
+\item
+Second level item
+\begin{itemize}
+\item
+Third level item
+\begin{itemize}
+\item
+Fourth level item
+\item
+Fourth level item
+\end{itemize}
+\item
+Third level item
+\end{itemize}
+\item
+Second level item
+\end{itemize}
+\item
+First level item
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Some More Examples}
+\label{Section:ChapAbbr:SomeMoreExamples}
+
+According to~\cite{IEEEexample:book_typical}, this behavior can be explained this way.
+\lipsum[12]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Examples of Mathematical Expressions, Definitions, and Theorems}
+\label{Section:ChapAbbr:SomeMoreExamples:Math}
+
+We have the following unnumbered mathematical equation:
+\[
+E=mc^2.
+\]
+On the other hand, the following is a numbered mathematical inequality:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{align}
+x \leq
+\frac{\displaystyle\sum_{i=1}^{n} y^2 \cdot \one{y > 1}}
+{\displaystyle\int_{-\infty}^{\infty} x^3 \;\text{d}z \cdot
+\binom{\alpha}{\beta} \frac{\floor{\frac{a}{b}}}{\ceil{\frac{c}{d}}}}.
+\label{Eq:ChapAbbr:EqExampleA}
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Inequality~\eqref{Eq:ChapAbbr:EqExampleA} will be applied multiple times to prove our theorems, in a manner similar to \cite{IEEEexample:article_typical, IEEEexample:conf_typical}.
+We now introduce the following definition:
+
+\begin{Thm:Definition}[Name of Term Being Defined]
+This is the definition of the term, along with relevant conditions, trivial cases, exceptions, etc.
+\end{Thm:Definition}
+
+We can rewrite the result of \cite[Theorem~2.5]{IEEEexample:conf_typical} in the following convenient form for our problem:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Proposition}
+For all \mbox{$a,b,c\in\ZZ^+$}, we have
+\label{Thm:Proposition:ChapAbbr:PropositionExample}
+\[
+a^2+b^3\leq c^4.
+\]
+\end{Thm:Proposition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Based on our numerical observations, we make the following conjecture about the upper bound:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Conjecture}
+If \mbox{$x\geq 3$} and \mbox{$0<y<x^2$}, then for all \mbox{$n\in\ZZ^+$},
+\[
+\sum_{i=1}^{n} x_i
+= x_1 + x_2 + \cdots + x_n
+\leq T_{\textup{all}}.
+\]
+\end{Thm:Conjecture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Here is a lemma that will be quite useful in deriving our results:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Lemma}
+[Name of Lemma if any]
+\label{Thm:Lemma:ChapAbbr:LemmaExampleA}
+If \mbox{$x,y,z\in\ZZ^+_0$}, then \mbox{$f(x+y+z) = 1$}.
+\end{Thm:Lemma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Applying \Lemma~\mref{Thm:Lemma:ChapAbbr:LemmaExampleA} to \cite[Theorem~4.2]{IEEEexample:book_typical} produces the following theorem:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Theorem}
+[Name of Theorem if any]
+\label{Thm:Theorem:ChapAbbr:TheoremExample}
+If \mbox{$x+y\geq z$}, then
+\begin{align*}
+\sum_{i=x}^{y} f(i) \leq z.
+\end{align*}
+\end{Thm:Theorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As a special case of \Theorem~\mref{Thm:Theorem:ChapAbbr:TheoremExample}, we have the following corollary:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Corollary}
+If \mbox{$x=4$} and \mbox{$y=z$}, then \mbox{$\sum_{i=x}^{y} f(i) = 5$}.
+\end{Thm:Corollary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lipsum[13]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion and Future Work}
+\label{Section:ChapAbbr:Conclusion}
+
+\lipsum[14-15]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Proofs of Theorems}
+\label{Section:ChapAbbr:ProofsOfTheorems}
+
+\noindent
+{\color{red}%
+Remember to manually disable (and re-enable) updates to the table of contents (TOC), using
+\[
+\verb|\DisableTOCUpdates|
+\text{ and }
+\verb|\EnableTOCUpdates|,
+\]
+if you want to omit subsections, tables, figures, etc., from the table of contents.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DisableTOCUpdates
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Proof of Lemma~\ref{Thm:Lemma:ChapAbbr:LemmaExampleA}}
+
+\lipsum[16-17]
+\qedmarker
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Proof of Theorem~\ref{Thm:Theorem:ChapAbbr:TheoremExample}}
+
+\lipsum[18]
+
+The following lemma will be quite useful in deriving the theorem:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Thm:Lemma}
+\label{Thm:Lemma:ChapAbbr:LemmaExampleB}
+If \mbox{$a,b,c\in\ZZ$}, then \mbox{$g(a\cdot b\cdot c) \leq -1$}.
+\end{Thm:Lemma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{proof}
+[Proof of Lemma~\ref{Thm:Lemma:ChapAbbr:LemmaExampleB}]
+\lipsum[19-20]
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lipsum[21]
+Applying \Lemma~\mref{Thm:Lemma:ChapAbbr:LemmaExampleB} yields the following:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{align}
+& A + B + C + D + E + F
++ \alpha + \beta + \gamma + \delta + \Gamma
+\notag
+\\
+&\hspace{5em}
+\leq
+\Omega + \Sigma + \omega + \sigma + \Theta + \theta + \epsilon
++ S + T + U + V + W + X + Y + Z.
+\label{Eq:ChapAbbr:EqExampleB}
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Finally, the desired result is obtained by substituting \mbox{$A=b$} into \eqref{Eq:ChapAbbr:EqExampleB}.
+\qedmarker
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\EnableTOCUpdates
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Acknowledgment}
+\label{Section:ChapAbbr:Acknowledgment}
+
+Insert chapter acknowledgment here.
+\lipsum[22]

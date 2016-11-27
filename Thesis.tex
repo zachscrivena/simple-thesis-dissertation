@@ -1,0 +1,75 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-THESIS-DISSERTATION
+%% <https://github.com/zachscrivena/simple-thesis-dissertation>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,nonstop,draftmode]{simplethesisdissertation}
+% Class options:
+% a4paper, letterpaper, nonstop, draftmode.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Document properties.
+\def\DocumentTitle{Insert Thesis Title Here}
+\def\AuthorName{Insert Author Name Here}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\DocumentTitle},
+pdfauthor={\AuthorName},
+pdfsubject={Ph.D. Thesis, University Institute of College, 2016},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks,
+bookmarksnumbered}
+
+% Accent colors.
+\definecolor{AccentOne}{RGB}{0,68,186} % blue
+
+% Macros:
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\renewcommand{\binom}[2]{\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)}
+\newcommand{\ceil}[1]{{\left\lceil{#1}\right\rceil}}
+%\newcommand{\ffrac}[2]{{\nicefrac{#1}{#2}}}
+%\newcommand{\fffrac}[2]{{\left.{#1}\middle/{#2}\right.}}
+\newcommand{\floor}[1]{{\left\lfloor{#1}\right\rfloor}}
+\DeclareMathOperator{\lcm}{lcm}
+\newcommand{\ZZ}{{\mathbb{Z}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{Thesis-FrontMatter.tex}
+
+\input{Thesis-Chapter-Intro.tex}
+
+\input{Thesis-Chapter-ChapAbbr.tex}
+
+\input{Thesis-Chapter-Summary.tex}
+
+\input{Thesis-BackMatter.tex}
+
+\end{document}
