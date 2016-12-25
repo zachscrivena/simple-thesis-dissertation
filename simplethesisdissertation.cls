@@ -4,7 +4,7 @@
 % vim: set fenc=utf-8
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% SIMPLE-THESIS-DISSERTATION
+%% simplethesisdissertation.cls
 %% <https://github.com/zachscrivena/simple-thesis-dissertation>
 %% This is free and unencumbered software released into the
 %% public domain; see <http://unlicense.org> for details.
@@ -12,17 +12,17 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{simplethesisdissertation}[2016/11/26 Simple Thesis Dissertation https://github.com/zachscrivena/simple-thesis-dissertation]
+\ProvidesClass{simplethesisdissertation}[2016/12/25 Simple Thesis Dissertation https://github.com/zachscrivena/simple-thesis-dissertation]
 
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{report}}
 \DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{report}}
 
+% Run in non-stop mode.
+\DeclareOption{nonstopmode}{\nonstopmode}
+
 % Draft mode.
 \newcommand{\TypesetInDraftMode}{0}
 \DeclareOption{draftmode}{\renewcommand{\TypesetInDraftMode}{1}}
-
-% Run in non-stop mode.
-\DeclareOption{nonstop}{\nonstopmode}
 
 \ProcessOptions\relax
 
@@ -262,9 +262,7 @@ Scale=0.95]
 % Paragraph indentation:
 % Indent first line of all paragraphs (including the first),
 % as in IEEE style.
-\makeatletter
 \let\@afterindentfalse\@afterindenttrue
-\makeatother
 
 % Indented blocks.
 \newcommand{\IndentBlock}[1]{\noindent\hangafter=0\hangindent=#1\parindent\ignorespaces}
@@ -285,16 +283,13 @@ Scale=0.95]
 \fi
 
 % Empty style, for title page.
-\makeatletter
 \def\ps@empty{%
 \def\@oddhead{\UseHeaderFooterFont}%
 \def\@evenhead{\UseHeaderFooterFont}%
 \def\@oddfoot{\UseHeaderFooterFont\FooterText}%
 \def\@evenfoot{\UseHeaderFooterFont\FooterText}}
-\makeatother
 
 % Plain style, for chapter pages.
-\makeatletter
 \def\ps@plain{%
 \def\@oddhead{\UseHeaderFooterFont%
 \hfill\thepage\hfill}%
@@ -302,11 +297,9 @@ Scale=0.95]
 \hfill\thepage\hfill}%
 \def\@oddfoot{\UseHeaderFooterFont\FooterText}%
 \def\@evenfoot{\UseHeaderFooterFont\FooterText}}
-\makeatother
 
 \iffalse
 % Plain style, for chapter pages.
-\makeatletter
 \def\ps@plain{%
 \def\@oddhead{\UseHeaderFooterFont%
 \MakeUppercase{\DocumentTitle}\hfill\thepage}%
@@ -314,10 +307,8 @@ Scale=0.95]
 \thepage\hfill\MakeUppercase{\DocumentTitle}}%
 \def\@oddfoot{\UseHeaderFooterFont\FooterText}%
 \def\@evenfoot{\UseHeaderFooterFont\FooterText}}
-\makeatother
 
 % Regular style, for regular pages in numbered chapters.
-\makeatletter
 \def\ps@regular{%
 \def\@oddhead{\UseHeaderFooterFont%
 \MakeUppercase{\chaptername~\thechapter~~\Chaptername}\hfill\thepage}%
@@ -325,10 +316,8 @@ Scale=0.95]
 \thepage\hfill\MakeUppercase{\DocumentTitle}}%
 \def\@oddfoot{\UseHeaderFooterFont\FooterText}%
 \def\@evenfoot{\UseHeaderFooterFont\FooterText}}
-\makeatother
 
 % Regular style, for regular pages in unnumbered chapters.
-\makeatletter
 \def\ps@regularunnumberedchapters{%
 \def\@oddhead{\UseHeaderFooterFont%
 \MakeUppercase{\Chaptername}\hfill\thepage}%
@@ -336,7 +325,6 @@ Scale=0.95]
 \thepage\hfill\MakeUppercase{\DocumentTitle}}%
 \def\@oddfoot{\UseHeaderFooterFont\FooterText}%
 \def\@evenfoot{\UseHeaderFooterFont\FooterText}}
-\makeatother
 \fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -359,7 +347,7 @@ Scale=0.95]
 % Numbered lists in IEEE style.
 % (Individual lists can be modified by redefining
 % these macros inside the enumerate environment.)
-\makeatletter
+
 % 1st level: 1), 2), 3)
 \renewcommand{\theenumi}{\arabic{enumi}}
 \renewcommand{\labelenumi}{\theenumi)}
@@ -375,7 +363,6 @@ Scale=0.95]
 \renewcommand{\theenumiv}{\Alph{enumiv}}
 \renewcommand{\labelenumiv}{\theenumiv)}
 \renewcommand\p@enumiv{}
-\makeatother
 
 % Numbered lists: Adjust spacing.
 \let\oldenumerate\enumerate
@@ -421,7 +408,6 @@ Scale=0.95]
 % Captions for figures and tables.
 \newcommand{\CaptionFontSize}{\small}
 
-\makeatletter
 \def\@figurestring{figure}
 \def\@tablestring{table}
 \def\@makecaption#1#2{%
@@ -439,7 +425,6 @@ Scale=0.95]
 \vskip1em
 \fi
 }
-\makeatother
 
 % References to figures.
 \newcommand{\Figure}{{\color{AccentOne}Figure}}
@@ -508,11 +493,9 @@ Scale=0.95]
 
 \theoremstyle{MyPlain}
 
-\makeatletter
 \@ifundefined{chapter}
 {\newtheorem{Thm:Theorem}{Theorem}[]}
 {\newtheorem{Thm:Theorem}{Theorem}[chapter]}
-\makeatother
 
 \newtheorem{Thm:Lemma}[Thm:Theorem]{Lemma}
 \newtheorem{Thm:Corollary}[Thm:Theorem]{Corollary}
@@ -584,13 +567,11 @@ Scale=0.95]
 
 \RequirePackage{algpseudocode} % For algorithms.
 
-\makeatletter
 \algnewcommand{\CommentLeft}[1]{\State $\triangleright$\;\textit{#1}}
 \algnewcommand{\CommentRight}[1]{\null\hfill $\triangleright$\;\textit{#1}}
 \algnewcommand{\Goto}{\State \textbf{goto}\,}
 \algnewcommand{\Break}{\State \textbf{break}\,}
 \algnewcommand{\Stateu}{\Statex \hskip\ALG@thistlm}
-\makeatother
 
 % Inline code.
 \newcommand{\code}[1]{\mbox{\color{DarkBlue}\texttt{#1}}}
