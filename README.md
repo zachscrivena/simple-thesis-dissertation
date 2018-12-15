@@ -6,7 +6,7 @@ Template for a simple thesis or dissertation (Ph.D. or master's degree) or techn
 https://github.com/zachscrivena/simple-thesis-dissertation
 
 **Lead author:**<br>
-Zach Scrivena (zachscrivena@gmail.com)
+Zach Scrivena
 
 **Compiled sample document:**<br>
 [Thesis.pdf](https://raw.githubusercontent.com/zachscrivena/simple-thesis-dissertation/master/Thesis.pdf)
