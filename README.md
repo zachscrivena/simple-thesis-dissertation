@@ -1,6 +1,6 @@
 # simple-thesis-dissertation
 
-Template for a simple thesis or dissertation (Ph.D. or master's degree) or technical report, in XeLaTeX.
+Template for a simple thesis or dissertation (bachelor's, master's, Ph.D.) or technical report, in XeLaTeX.
 
 **Website:**<br>
 https://github.com/zachscrivena/simple-thesis-dissertation
