@@ -393,6 +393,7 @@ Scale=0.95]
 
 \RequirePackage{graphicx} % To support graphics in EPS format.
 \RequirePackage{longtable} % For multi-page long tables.
+\RequirePackage{etoolbox} % For patching longtable captions.
 \RequirePackage{multirow} % To support multi-row cells in tables.
 \RequirePackage{booktabs} % For making nice tables.
 \RequirePackage{array} % For better table content alignment.
@@ -415,9 +416,9 @@ Scale=0.95]
 \ifx\@captype\@figurestring
 \vskip1em
 \fi
-\sbox\@tempboxa{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#1}}\hspace{0.5em}#2}%
+\sbox\@tempboxa{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#1}\hspace{0.5em}}#2}%
 \ifdim\wd\@tempboxa>\hsize
-{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#1}}\hspace{0.5em}#2}%
+{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#1}\hspace{0.5em}}#2}%
 \else
 \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
 \fi
@@ -425,6 +426,33 @@ Scale=0.95]
 \vskip1em
 \fi
 }
+
+% Caption for longtables.
+\setlength{\LTcapwidth}{\textwidth}
+
+\patchcmd{\LT@makecaption}
+{\sbox}
+{\CaptionFontSize\singlespacing\sbox}
+{}
+{}
+
+\patchcmd{\LT@makecaption}
+{\vskip\baselineskip}
+{\vskip1em}
+{}
+{}
+
+\patchcmd{\LT@makecaption}
+{\@tempboxa{#1{#2: }#3}}
+{\@tempboxa{#1{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#2}\hspace{0.5em}}}#3}}
+{}
+{}
+
+\patchcmd{\LT@makecaption}
+{#1{#2: }#3}
+{#1{{\color{AccentOne}\sffamily\bfseries\MakeUppercase{#2}\hspace{0.5em}}}#3}
+{}
+{}
 
 % References to figures.
 \newcommand{\Figure}{{\color{AccentOne}Figure}}

@@ -45,7 +45,7 @@ Proofs of theorems are deferred to \Section~\sref{Section:ChapAbbr:ProofsOfTheor
 \centering\CaptionFontSize
 \includegraphics[height=15em]
 {Figure-ChapAbbr-FigureExampleA}
-\caption[Insert an abbreviated caption here to show in the List of Figures]
+\caption[Insert an abbreviated caption here to show in the List of Figures (optional)]
 {Insert the full caption here for this floating figure.}
 \label{Figure:ChapAbbr:FigureExampleA}
 \end{figure}
@@ -60,7 +60,7 @@ This is a reference to \Figure~\fref{Figure:ChapAbbr:FigureExampleA}.
 \centering\CaptionFontSize
 \includegraphics[height=30em]
 {Figure-ChapAbbr-FigureExampleB}
-\caption[Insert an abbreviated caption here to show in the List of Figures]
+\caption[Insert an abbreviated caption here to show in the List of Figures (optional)]
 {Insert the full caption here for this floating figure.
 The caption should provide sufficient context to interpret the figure.
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -77,7 +77,7 @@ Note how the effect in \Figure~\fref{Figure:ChapAbbr:FigureExampleB} is stronger
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE: CHAPABBR: EXAMPLE A
 \begin{table}
-\caption[Insert an abbreviated caption here to show in the List of Tables]
+\caption[Insert an abbreviated caption here to show in the List of Tables (optional)]
 {Insert the full caption here for this floating table.}
 \label{Table:ChapAbbr:TableExampleA}
 \centering\CaptionFontSize
@@ -105,7 +105,7 @@ We summarize our notation in \Table~\tref{Table:ChapAbbr:TableExampleA}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TABLE: CHAPABBR: EXAMPLE B
 \begin{table}
-\caption[Insert an abbreviated caption here to show in the List of Tables]
+\caption[Insert an abbreviated caption here to show in the List of Tables (optional)]
 {Insert the full caption here for this floating table.
 The caption should provide sufficient context to interpret the table.
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -113,7 +113,7 @@ Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
 Curabitur dictum gravida mauris.}
 \label{Table:ChapAbbr:TableExampleB}
 \centering\CaptionFontSize
-\begin{tabular}{c@{\hspace{1em}}l@{\hspace{1em}}c}
+\begin{tabular}{c@{\hspace{1em}}c@{\hspace{1em}}c}
 \toprule
 Variable & Initial Value & Value at $t=100$
 \\
@@ -149,6 +149,143 @@ $h$ & $0.012$ & $2.326$
 
 \Table~\tref{Table:ChapAbbr:TableExampleB} summarizes our simulation results.
 \lipsum[11]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE: CHAPABBR: EXAMPLE C (using longtable)
+\begin{small}
+\begin{longtable}{c@{\hspace{1em}}c@{\hspace{1em}}c@{\hspace{1em}}c}
+\caption[Insert an abbreviated caption here to show in the List of Tables (optional)]
+{Example of a \texttt{longtable}.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+Curabitur dictum gravida mauris.}
+\label{Table:ChapAbbr:TableExampleC}
+\\
+\toprule
+Index & Variable & Initial Value & Value at $t=100$
+\\
+\midrule
+\endfirsthead
+\caption[]{(continued)}
+\\
+\toprule
+Index & Variable & Initial Value & Value at $t=100$
+\\
+\midrule
+\endhead
+\endfoot
+\bottomrule
+\endlastfoot
+1 & $c$ & $0.012$ & $3.456$
+\\
+2 & $\delta$ & $0.312$ & $1.416$
+\\
+3 & $\gamma$ & $0.042$ & $3.252$
+\\
+4 & $h$ & $0.012$ & $3.353$
+\\
+5 & $c$ & $0.012$ & $4.446$
+\\
+6 & $\delta$ & $0.015$ & $3.556$
+\\
+7 & $\gamma$ & $0.612$ & $6.656$
+\\
+8 & $h$ & $0.072$ & $7.456$
+\\
+9 & $c$ & $0.018$ & $8.756$
+\\
+10 & $\delta$ & $0.015$ & $3.556$
+\\
+11 & $\gamma$ & $0.612$ & $6.656$
+\\
+12 & $h$ & $0.072$ & $7.456$
+\\
+13 & $c$ & $0.018$ & $8.756$
+\\
+14 & $\delta$ & $0.912$ & $9.456$
+\\
+15 & $\gamma$ & $0.092$ & $5.956$
+\\
+16 & $h$ & $0.012$ & $2.326$
+\\
+17 & $c$ & $0.012$ & $3.456$
+\\
+18 & $\delta$ & $0.312$ & $1.416$
+\\
+19 & $\gamma$ & $0.042$ & $3.252$
+\\
+20 & $h$ & $0.012$ & $3.353$
+\\
+21 & $c$ & $0.012$ & $4.446$
+\\
+22 & $\delta$ & $0.015$ & $3.556$
+\\
+23 & $\gamma$ & $0.612$ & $6.656$
+\\
+24 & $h$ & $0.072$ & $7.456$
+\\
+25 & $c$ & $0.018$ & $8.756$
+\\
+26 & $\delta$ & $0.912$ & $9.456$
+\\
+27 & $\gamma$ & $0.092$ & $5.956$
+\\
+28 & $h$ & $0.012$ & $2.326$
+\\
+29 & $c$ & $0.012$ & $3.456$
+\\
+30 & $\delta$ & $0.312$ & $1.416$
+\\
+31 & $\gamma$ & $0.042$ & $3.252$
+\\
+32 & $h$ & $0.012$ & $3.353$
+\\
+33 & $c$ & $0.012$ & $4.446$
+\\
+34 & $\delta$ & $0.015$ & $3.556$
+\\
+35 & $\gamma$ & $0.612$ & $6.656$
+\\
+36 & $h$ & $0.072$ & $7.456$
+\\
+37 & $c$ & $0.018$ & $8.756$
+\\
+38 & $\delta$ & $0.912$ & $9.456$
+\\
+39 & $\gamma$ & $0.092$ & $5.956$
+\\
+40 & $h$ & $0.012$ & $2.326$
+\\
+41 & $c$ & $0.012$ & $3.456$
+\\
+42 & $\delta$ & $0.312$ & $1.416$
+\\
+43 & $\gamma$ & $0.042$ & $3.252$
+\\
+44 & $h$ & $0.012$ & $3.353$
+\\
+45 & $c$ & $0.012$ & $4.446$
+\\
+46 & $\delta$ & $0.015$ & $3.556$
+\\
+47 & $\gamma$ & $0.612$ & $6.656$
+\\
+48 & $h$ & $0.072$ & $7.456$
+\\
+49 & $c$ & $0.018$ & $8.756$
+\\
+50 & $\delta$ & $0.912$ & $9.456$
+\\
+51 & $\gamma$ & $0.092$ & $5.956$
+\\
+52 & $h$ & $0.012$ & $2.326$
+\\
+\end{longtable}
+\end{small}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Table~\tref{Table:ChapAbbr:TableExampleC}, which uses a \texttt{longtable}, shows the full details of our simulation.
+\lipsum[6]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
